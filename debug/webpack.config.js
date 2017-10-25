@@ -23,5 +23,10 @@ module.exports = {
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
   },
+  
+  devServer: {
+	  inline:true,
+	  port: 9090
+  },  
   plugins: [HtmlWebpackPluginConfig]
 }
